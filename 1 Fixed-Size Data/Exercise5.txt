@@ -1,0 +1,21 @@
+Exercise 5. Use the 2htdp/image library to create the image of a simple boat or tree. Make sure you can easily change the scale of the entire image. 
+
+Code1:
+(define WIDTH 5)
+(define HEIGHT 30)
+(define LENGTH 20)
+(place-images
+   (list (triangle LENGTH "solid" "yellowgreen")
+         (triangle LENGTH "solid" "yellowgreen")
+         (triangle LENGTH "solid" "yellowgreen")
+         (triangle LENGTH "solid" "yellowgreen")
+         (rectangle WIDTH HEIGHT "solid" "yellowgreen"))
+   (list (make-posn 50 60)
+         (make-posn 50 48)
+         (make-posn 50 36)
+         (make-posn 50 24)
+         (make-posn 50 80))
+   (rectangle 100 100 "solid" "white"))
+   
+Test1:
+

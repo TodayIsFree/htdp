@@ -1,0 +1,14 @@
+Exercise 6. Add the following line to the definitions area:Copy and paste the image into your DrRacket.
+
+    (define cat .)
+
+Create an expression that counts the number of pixels in the image. 
+
+Code:
+(define cat .)
+(define pixels
+  (* (image-width cat) (image-height cat)))
+  
+Test:
+> pixels
+8775
