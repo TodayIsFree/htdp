@@ -9,8 +9,8 @@ Coding:
 (define i 5)
 
 (define str1
-  (string-append (substring str 0 5) "_"
-                 (substring str 5 10)))
+  (string-append (substring str 0 i) "_"
+                 (substring str i 10)))
 				 
 Test:
 > str1
