@@ -1,0 +1,17 @@
+Exercise 3. Add the following two lines to the definitions area:
+
+    (define str "helloworld")
+    (define i 5)
+Then create an expression using string primitives that adds "_" at position i. In general this means the resulting string is longer than the original one; here the expected result is "hello_world".
+
+Coding:
+(define str "helloworld")
+(define i 5)
+
+(define str1
+  (string-append (substring str 0 5) "_"
+                 (substring str 5 10)))
+				 
+Test:
+> str1
+"hello_world"
