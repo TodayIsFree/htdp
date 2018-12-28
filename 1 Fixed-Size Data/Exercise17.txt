@@ -1,0 +1,16 @@
+Exercise 17. Define the function image-classify, which consumes an image and conditionally produces "tall" if the image is taller than wide, "wide" if it is wider than tall, or "square" if its width and height are the same.
+
+Code:
+(define (image-classfiy image)
+  (if (= (image-width image) (image-height image)) "square"
+      (if (> (image-width image) (image-height image)) "wide" "tall")))
+	  
+Test:
+> (image-classfiy .)
+"tall"
+> (image-classfiy (rectangle 10 20 "solid" "black"))
+"tall"
+> (image-classfiy (rectangle 20 10 "solid" "black"))
+"wide"
+> (image-classfiy (rectangle 10 10 "solid" "black"))
+"square"

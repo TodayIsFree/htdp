@@ -1,0 +1,10 @@
+Exercise 20. Define the function string-delete, which consumes a string plus a number i and deletes the ith position from str. Assume i is a number between 0 (inclusive) and the length of the given string (exclusive).
+
+Code:
+(define (string-delete str i)
+  (string-append (substring str 0 (- i 1))
+                 (substring str i (string-length str))))
+				 
+Test:
+> (string-delete "helloworld" 5)
+"hellworld"

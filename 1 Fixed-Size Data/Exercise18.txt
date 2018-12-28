@@ -1,0 +1,9 @@
+Exercise 18. Define the function string-join, which consumes two strings and appends them with "_" in between. 
+
+Code:
+(define (string-join x y)
+  (string-append x "_" y))
+  
+Test:
+> (string-join "hello" "world")
+"hello_world"

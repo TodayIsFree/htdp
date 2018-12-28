@@ -1,0 +1,9 @@
+Exercise 16. Define the function image-area, which counts the number of pixels in a given image.
+
+Code:
+(define (image-area image)
+  (* (image-width image) (image-height image)))
+  
+Test:
+> (image-area .)
+8775

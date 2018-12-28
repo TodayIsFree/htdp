@@ -1,0 +1,16 @@
+Exercise 19. Define the function string-insert, which consumes a string str plus a number i and inserts "_" at the ith position of str. Assume i is a number between 0 and the length of the given string (inclusive). 
+
+Code:
+(define (string-insert str i)
+  (string-append (substring str 0 i) "_"
+                 (substring str i (string-length str))))
+				 
+Test:
+> (string-insert "helloworld" 5)
+"hello_world"
+> (string-insert "helloworld" 6)
+"hellow_orld"
+> (string-insert "hello world" 5)
+"hello_ world"
+> (string-insert "hello world" 6)
+"hello _world"
