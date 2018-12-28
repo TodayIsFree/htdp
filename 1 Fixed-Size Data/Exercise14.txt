@@ -1,0 +1,11 @@
+Exercise 14. Define the function string-last, which extracts the last 1String from a non-empty string. 
+
+Code:
+(define (string-last x )
+  (if (string? x) (string-ith x (- (string-length x) 1)) #false))
+
+Test:
+> (string-last "acd")
+"d"
+> (string-last 11)
+#false

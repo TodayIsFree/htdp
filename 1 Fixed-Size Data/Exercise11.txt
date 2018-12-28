@@ -1,0 +1,9 @@
+Exercise 11. Define a function that consumes two numbers, x and y, and that computes the distance of point (x,y) to the origin.
+
+Code:
+(define (distance x y)
+  (sqrt (+ (* x x) (* y y))))
+  
+Test:
+> (distance 3 4)
+5

@@ -1,0 +1,11 @@
+Exercise 13. Define the function string-first, which extracts the first 1String from a non-empty string.
+
+Code:
+(define (string-first x )
+  (if (string? x) (string-ith x 0) #false))
+  
+Test:
+> (string-first "adc")
+"a"
+> (string-first 11)
+#false
