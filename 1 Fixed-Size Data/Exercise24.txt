@@ -1,0 +1,9 @@
+Exercise 24. Here is the definition of ==>: y 
+
+Code:
+(define (==> x y)
+  (or (not x) y))
+  
+Test:
+> (==> #true #false)
+#false

@@ -1,0 +1,9 @@
+Exercise 23. The first 1String in "hello world" is "h". How does the following function compute this result? 
+
+Code:
+(define (string-first s)
+  (substring s 0 1))
+  
+Test:
+> (string-first "hello")
+"h"

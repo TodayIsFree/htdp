@@ -1,0 +1,9 @@
+Exercise 25. Take a look at this attempt to solve exercise 17: 
+
+Code:
+(define (image-classify img)
+  (cond
+    [(>= (image-height img) (image-width img)) "tall"]
+    [(= (image-height img) (image-width img)) "square"]
+    [(<= (image-height img) (image-width img)) "wide"]))
+(image-classify (rectangle 10 20 "solid" "red"))

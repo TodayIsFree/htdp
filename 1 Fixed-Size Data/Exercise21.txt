@@ -1,0 +1,11 @@
+Exercise 21. Use DrRacket’s stepper to evaluate (ff (ff 1)) step-by-step. Also try (+ (ff 1) (ff 1)). 
+
+Code1:
+(define (ff a)
+  (* 10 a))
+(ff (ff 1))
+
+Code2:
+(define (ff a)
+  (* 10 a))
+(+ (ff 1) (ff 1))
